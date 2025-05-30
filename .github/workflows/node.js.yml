@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  deploy-gh-pages:
     runs-on: ubuntu-latest
 
     strategy:
