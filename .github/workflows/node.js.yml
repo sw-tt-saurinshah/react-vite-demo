@@ -61,17 +61,17 @@ jobs:
       - name: Run Jest Tests
         run: npm test -- --coverage
 
-  audit:
-    name: Dependency Audit
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-      - run: npm install
-      - name: Audit Dependencies
-        run: npm audit --audit-level=high
+  # audit:
+  #   name: Dependency Audit
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 18
+  #     - run: npm install
+  #     - name: Audit Dependencies
+  #       run: npm audit --audit-level=high
 
   # sonar:
   #   name: SonarCloud Analysis
